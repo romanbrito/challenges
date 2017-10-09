@@ -30,21 +30,86 @@
         position: absolute;
         top: 0;
         z-index: -100000;
+        width: 100%;
+    }
+
+    .blank-bar {
+        height: 5vh;
+    }
+
+    .blank-bar-app {
+        height: 2vh;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li:before {
+        content: '* ';
+    }
+
+    .text-bar {
+        position: absolute;
+        top: 50%;
     }
 
 </style>
 <body>
+
 <div class="container-fluid">
     <div class="row">
+        <div class="blank-bar"></div>
         <div class="title-top center">
             <img src="img/become.png" width="50%"/>
         </div>
+        <div class="blank-bar-app"></div>
         <div class="title center">
             <img src="img/TexNation.png" width="50%"/>
         </div>
         <div class="brown-layer">
             <img src="img/brownLayer.png" width="100%"/>
         </div>
+    </div>
+</div>
+
+<div class="container app-content">
+    <div class="row">
+        <div class="app-text col-xs-6">
+            <h1>DOWNLOAD THE </h1>
+            <h1>MOBILE APP</h1>
+            <ul>
+                <li>EARN POINTS</li>
+                <li>GET GREAT REWARDS</li>
+                <li>FREE MEALS</li>
+                <li>HOT DEALS FOR MEMBERS ONLY</li>
+            </ul>
+        </div>
+        <div class="phone col-xs-6">
+            <img src="img/IphoneApp.png" width="100%"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="bar-queso">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <img src="img/bar-queso.png" width="100%"/>
+                <div class="text-bar">
+                    <p>Get a FREE Chips + Queso when you join!</p>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="app-iphone col-xs-3">
+            <img src="img/AppleStore.png" width="100%"/>
+        </div>
+        <div class="app-play col-xs-3">
+            <img src="img/GooglePlay.png" width="100%"/>
+        </div>
+        <div class="col-xs-3"></div>
     </div>
 </div>
 
