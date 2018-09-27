@@ -8,8 +8,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-    body {
-        background-image: url("img/LightWood11x17.jpg");
+    #bg-app {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1000;
     }
 
     .title-top {
@@ -29,7 +35,7 @@
     .brown-layer {
         position: absolute;
         top: 0;
-        z-index: -100000;
+        z-index: -500;
         width: 100%;
     }
 
@@ -51,11 +57,17 @@
 
     .text-bar {
         position: absolute;
+        left: 0;
         top: 50%;
+        width: 100%;
+        text-align: center;
     }
 
 </style>
 <body>
+
+<!--texnation app-->
+<img id="bg-app" src="img/LightWood11x17.jpg"/>
 
 <div class="container-fluid">
     <div class="row">
@@ -93,9 +105,11 @@
         <div class="bar-queso">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-                <img src="img/bar-queso.png" width="100%"/>
-                <div class="text-bar">
-                    <p>Get a FREE Chips + Queso when you join!</p>
+                <div class="contain-queso">
+                    <img src="img/bar-queso.png" width="100%"/>
+                    <div class="text-bar">
+                        <p>Get a FREE Chips + Queso when you join!</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-1"></div>
@@ -112,6 +126,6 @@
         <div class="col-xs-3"></div>
     </div>
 </div>
-
+<!--end texnation app-->
 </body>
 </html>
